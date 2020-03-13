@@ -1,0 +1,81 @@
+body{
+  background: #012345;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .borders{
+    border-radius:2px;
+    border:2px solid #7d7d7d;
+  }
+
+  .mainContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    background: #fff;
+    padding:25px;
+    border-radius:3px;
+
+    .rssAndEmail{
+      display: flex;
+      justify-content: space-around;
+
+      input{
+        width:250px;
+        padding:3px;
+        margin:10px;
+      }
+    }
+
+    .emailPreviewAndRssList{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .emailPreview{
+        display: flex;
+        flex-direction: column;
+        margin:10px;
+        width:350px;
+        padding: 3px;
+        min-height: 20vh;
+      }
+
+      .rssList{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin:10px;
+        padding:3px;
+        width:150px;
+        min-height: 20vh;
+
+        ul{
+
+        }
+      }
+    }
+
+    .submitButtons{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      input{
+        padding:10px 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color:#fff;
+        text-shadow:1px 1px 1px black;
+        background: #012345;
+      }
+    }
+  }
+}
