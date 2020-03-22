@@ -1,17 +1,19 @@
-body{
+body {
   background: #012345;
-  width:100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 
-  .borders{
-    border-radius:2px;
-    border:2px solid #7d7d7d;
+  .borders {
+    border-radius: 2px;
+    border: 2px solid #7d7d7d;
   }
 
-  .mainContainer{
+  .mainContainer {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -19,61 +21,86 @@ body{
     height: fit-content;
     width: fit-content;
     background: #fff;
-    padding:25px;
-    border-radius:3px;
+    padding: 25px;
+    border-radius: 3px;
 
-    .rssAndEmail{
+    .rssAndEmail {
       display: flex;
       justify-content: space-around;
 
-      input{
-        width:250px;
-        padding:3px;
-        margin:10px;
+      input {
+        width: 250px;
+        padding: 3px;
+        margin: 10px;
       }
     }
 
-    .emailPreviewAndRssList{
+    .emailPreviewAndRssList {
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
 
-      .emailPreview{
+      .emailPreview {
         display: flex;
         flex-direction: column;
-        margin:10px;
-        width:350px;
+        margin: 10px;
+        width: 350px;
         padding: 3px;
-        min-height: 20vh;
+        height: 200px;
+
+        h2{
+          font-size:14px;
+        }
       }
 
-      .rssList{
+      .rssList {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        margin:10px;
-        padding:3px;
-        width:150px;
-        min-height: 20vh;
+        margin: 10px;
+        padding: 3px;
+        width: 150px;
+        height: 200px;
+        max-height: 80vh;
+        overflow: auto;
 
-        ul{
+        .rssElm:last-child{
+          border-bottom:none;
+        }
 
+        .rssElm{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin:2px;
+          border-bottom: 1px solid black;
+
+          img{
+            width: 15px;
+            height: 15px;
+            cursor:pointer;
+          }
+
+          p{
+            padding: 0;
+            margin:2px;
+          }
         }
       }
     }
 
-    .submitButtons{
+    .submitButtons {
       display: flex;
       justify-content: space-around;
       align-items: center;
 
-      input{
-        padding:10px 15px;
+      button {
+        padding: 10px 15px;
         font-weight: bold;
         text-transform: uppercase;
-        color:#fff;
-        text-shadow:1px 1px 1px black;
+        color: #fff;
+        text-shadow: 1px 1px 1px black;
         background: #012345;
       }
     }
