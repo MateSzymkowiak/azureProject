@@ -13,7 +13,7 @@ class Main extends React.Component {
             email: 'exmaple@mail.com',
             title: 'Title',
             header: 'Header',
-            description: 'Description',
+            description: 'Description'
         };
 
         this.handleChangeEmail = this.handleChangeEmail.bind(this);
